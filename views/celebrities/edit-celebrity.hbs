@@ -1,0 +1,16 @@
+<div class="new">
+{{#with celebrity}}
+<h2>Update {{name}}</h2>
+<form action="/celebrities/{{id}}/update" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{name}}"><br><br>
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" value="{{occupation}}"><br><br>
+        <label for="catchPhrase">CatchPhrase:</label>
+        <input type="text" id="catchPhrase" name="catchPhrase" value="{{catchPhrase}}"><br><br>
+{{/with }}
+       
+<input class="new-btn" type="submit" name="update" value="Update">
+
+</form>
+</div>

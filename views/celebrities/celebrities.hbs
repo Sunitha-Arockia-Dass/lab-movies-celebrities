@@ -1,0 +1,17 @@
+<div class="celebrities">
+  <div class="creat">
+    <a href="/celebrities/create">Create new celebrity</a>
+  </div>
+
+  {{#each celebrities}}
+    <div class="celebrity">
+
+      <h3> <a href="/celebrities/{{id}}"> {{name}}</a></h3>
+
+      <br />
+      <br />
+    </div>
+
+  {{/each}}
+
+</div>

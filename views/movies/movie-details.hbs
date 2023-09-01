@@ -1,0 +1,22 @@
+<div class="details">
+
+  {{#with movie}}
+    <div class="detail">
+
+      <h3>TITLE:{{title}}</h3>
+      <h4>GENRE:{{genre}}</h4>
+      <h5>PLOT:{{plot}}</h5>
+      {{#each cast}}
+        <h5>CAST:{{name}}</h5>
+      {{/each}}
+      <br />
+      <br />
+
+      <a href="/movies/{{id}}/update">Update</a>
+      <form action="/movies/{{id}}/delete" method="post">
+        <input type="submit" name="delete" value="Delete" />
+      </form>
+    </div>
+  {{/with}}
+
+</div>

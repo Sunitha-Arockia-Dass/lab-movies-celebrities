@@ -1,0 +1,18 @@
+<div class="details">
+
+{{#with celebrity}}
+<div class="detail">
+<h3>Name:{{name}}</h3>
+<h4>Occupation:{{occupation}}</h4>
+<h5>CATCHPHRASE:{{catchPhrase}}</h5>
+<br>
+<br>
+
+<a href="/celebrities/{{id}}/update">Update</a>
+<form action="/celebrities/{{id}}/delete" method="post">
+<input type="submit" name="delete" value="Delete">
+</form>
+</div>
+
+{{/with}}
+</div>
